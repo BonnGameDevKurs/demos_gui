@@ -1,0 +1,80 @@
+[gd_scene load_steps=3 format=3 uid="uid://bsoywmlx80jd6"]
+
+[ext_resource type="Texture2D" uid="uid://c6ykfjgyvkdpf" path="res://assets/icon.svg" id="1_s4k0s"]
+[ext_resource type="Script" uid="uid://dublpkbigvs3v" path="res://demos/canvas_layer_demo/move_camera.gd" id="2_fn0qi"]
+
+[node name="CanvasLayerDemo" type="Node"]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+anchor_mode = 0
+script = ExtResource("2_fn0qi")
+on = true
+speed = 25
+
+[node name="Wusels" type="Node2D" parent="."]
+position = Vector2(549, 321)
+
+[node name="Sprite2D" type="Sprite2D" parent="Wusels"]
+position = Vector2(-461, -235)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_s4k0s")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Wusels"]
+position = Vector2(-334, 67)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_s4k0s")
+
+[node name="Sprite2D3" type="Sprite2D" parent="Wusels"]
+position = Vector2(-93, -152)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_s4k0s")
+
+[node name="Sprite2D4" type="Sprite2D" parent="Wusels"]
+position = Vector2(149, 142)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_s4k0s")
+
+[node name="Sprite2D5" type="Sprite2D" parent="Wusels"]
+position = Vector2(411, -171)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_s4k0s")
+
+[node name="Sprite2D6" type="Sprite2D" parent="Wusels"]
+position = Vector2(725, 154)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_s4k0s")
+
+[node name="Sprite2D7" type="Sprite2D" parent="Wusels"]
+position = Vector2(980, -138)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_s4k0s")
+
+[node name="Sprite2D8" type="Sprite2D" parent="Wusels"]
+position = Vector2(1294, 136)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_s4k0s")
+
+[node name="Label" type="Label" parent="."]
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 74.0
+offset_top = -137.0
+offset_right = 975.0
+grow_vertical = 0
+theme_override_font_sizes/font_size = 42
+text = "Ohne CanvasLayer"
+vertical_alignment = 1
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Label" type="Label" parent="CanvasLayer"]
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -137.0
+offset_right = 335.0
+grow_vertical = 0
+theme_override_font_sizes/font_size = 42
+text = "Mit CanvasLayer"
+vertical_alignment = 2
