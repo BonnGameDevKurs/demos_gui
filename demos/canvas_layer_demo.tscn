@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://bqrvjvtaqgqtu"]
+
+[ext_resource type="Texture2D" uid="uid://c6ykfjgyvkdpf" path="res://assets/icon.svg" id="1_4kgo5"]
+
+[node name="CanvasLayerDemo" type="CanvasLayer"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 320.0
+offset_bottom = 320.0
+scale = Vector2(0.66, 0.66)
+texture = ExtResource("1_4kgo5")
