@@ -1,9 +1,10 @@
-[gd_scene load_steps=6 format=3 uid="uid://df7jjvp042rri"]
+[gd_scene load_steps=7 format=3 uid="uid://df7jjvp042rri"]
 
 [ext_resource type="Texture2D" uid="uid://dj6w6vm0utqmv" path="res://assets/ui/button.png" id="1_55i4a"]
 [ext_resource type="Texture2D" uid="uid://b3xb4fax6bhm8" path="res://demos/container_demo/template.png" id="1_kwxb1"]
 [ext_resource type="Texture2D" uid="uid://dioudxct7ju0b" path="res://assets/ui/button-pressed.png" id="2_680qj"]
 [ext_resource type="Texture2D" uid="uid://snmxrwn1ku54" path="res://assets/ui/button-hover.png" id="3_b43xr"]
+[ext_resource type="FontFile" uid="uid://8ij26qu0wq2t" path="res://assets/nokiafc22.ttf" id="4_680qj"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kwxb1"]
 bg_color = Color(0.0980392, 0.0980392, 0.0980392, 0.752941)
@@ -26,16 +27,93 @@ grow_vertical = 2
 layout_mode = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_kwxb1")
 
-[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer/PanelContainer"]
+[node name="MarginContainer" type="MarginContainer" parent="CenterContainer/PanelContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 2
+theme_override_constants/margin_top = 2
+theme_override_constants/margin_right = 2
+theme_override_constants/margin_bottom = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer/PanelContainer/MarginContainer"]
 layout_mode = 2
 
-[node name="TextureButton" type="TextureButton" parent="CenterContainer/PanelContainer/VBoxContainer"]
+[node name="TextureButton" type="TextureButton" parent="CenterContainer/PanelContainer/MarginContainer/VBoxContainer"]
 layout_mode = 2
 texture_normal = ExtResource("1_55i4a")
 texture_pressed = ExtResource("2_680qj")
 texture_hover = ExtResource("3_b43xr")
 
+[node name="Label" type="Label" parent="CenterContainer/PanelContainer/MarginContainer/VBoxContainer/TextureButton"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("4_680qj")
+theme_override_font_sizes/font_size = 8
+text = "Start"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TextureButton2" type="TextureButton" parent="CenterContainer/PanelContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+texture_normal = ExtResource("1_55i4a")
+texture_pressed = ExtResource("2_680qj")
+texture_hover = ExtResource("3_b43xr")
+
+[node name="Label" type="Label" parent="CenterContainer/PanelContainer/MarginContainer/VBoxContainer/TextureButton2"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("4_680qj")
+theme_override_font_sizes/font_size = 8
+text = "Controls"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TextureButton3" type="TextureButton" parent="CenterContainer/PanelContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+texture_normal = ExtResource("1_55i4a")
+texture_pressed = ExtResource("2_680qj")
+texture_hover = ExtResource("3_b43xr")
+
+[node name="Label" type="Label" parent="CenterContainer/PanelContainer/MarginContainer/VBoxContainer/TextureButton3"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("4_680qj")
+theme_override_font_sizes/font_size = 8
+text = "Fullscreen"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TextureButton4" type="TextureButton" parent="CenterContainer/PanelContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+texture_normal = ExtResource("1_55i4a")
+texture_pressed = ExtResource("2_680qj")
+texture_hover = ExtResource("3_b43xr")
+
+[node name="Label" type="Label" parent="CenterContainer/PanelContainer/MarginContainer/VBoxContainer/TextureButton4"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("4_680qj")
+theme_override_font_sizes/font_size = 8
+text = "Exit Game"
+horizontal_alignment = 1
+vertical_alignment = 1
+
 [node name="Template" type="Sprite2D" parent="."]
-position = Vector2(552.883, 132.5)
+position = Vector2(581, 130)
 scale = Vector2(0.470037, 0.470037)
 texture = ExtResource("1_kwxb1")

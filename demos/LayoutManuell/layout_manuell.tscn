@@ -39,3 +39,20 @@ offset_top = 65.0
 offset_right = 71.0
 offset_bottom = 96.0
 text = "Button3"
+
+[node name="Button" type="Button" parent="."]
+offset_right = 8.0
+offset_bottom = 8.0
+text = "Button 1"
+
+[node name="Button2" type="Button" parent="."]
+offset_top = 35.0
+offset_right = 75.0
+offset_bottom = 66.0
+text = "Button 2"
+
+[node name="Button3" type="Button" parent="."]
+offset_top = 68.0
+offset_right = 75.0
+offset_bottom = 99.0
+text = "Button 3"

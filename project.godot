@@ -19,7 +19,7 @@ config/icon="uid://c6ykfjgyvkdpf"
 
 window/size/viewport_width=348
 window/size/viewport_height=189
-window/stretch/mode="canvas_items"
+window/stretch/mode="viewport"
 
 [rendering]
 
