@@ -13,7 +13,13 @@ config_version=5
 config/name="demos_gui"
 run/main_scene="uid://bsoywmlx80jd6"
 config/features=PackedStringArray("4.4", "GL Compatibility")
-config/icon="uid://cq5wt3pntxa3d"
+config/icon="uid://c6ykfjgyvkdpf"
+
+[display]
+
+window/size/viewport_width=348
+window/size/viewport_height=189
+window/stretch/mode="canvas_items"
 
 [rendering]
 

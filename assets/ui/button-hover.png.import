@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d3s24xd3w5t7y"
-path="res://.godot/imported/unicorn_icon.png-4d1d065c42ac06c2fe98711de1c28c05.ctex"
+uid="uid://snmxrwn1ku54"
+path="res://.godot/imported/button-hover.png-6afc9dfda771ba8ab558bfc304fe4f39.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://demos/rich_text_label_demo/unicorn_icon.png"
-dest_files=["res://.godot/imported/unicorn_icon.png-4d1d065c42ac06c2fe98711de1c28c05.ctex"]
+source_file="res://assets/ui/button-hover.png"
+dest_files=["res://.godot/imported/button-hover.png-6afc9dfda771ba8ab558bfc304fe4f39.ctex"]
 
 [params]
 

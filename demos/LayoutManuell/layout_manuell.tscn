@@ -5,10 +5,11 @@
 [node name="LayoutManuell" type="Node"]
 
 [node name="TextureRect" type="TextureRect" parent="."]
-offset_left = 402.0
-offset_top = 178.0
-offset_right = 722.0
-offset_bottom = 498.0
+offset_left = 124.0
+offset_top = 44.0
+offset_right = 444.0
+offset_bottom = 364.0
+scale = Vector2(0.294915, 0.294915)
 texture = ExtResource("1_wpdw5")
 
 [node name="Control" type="Control" parent="."]
@@ -25,6 +26,7 @@ offset_bottom = 8.0
 text = "Button"
 
 [node name="Button2" type="Button" parent="Control"]
+layout_mode = 0
 offset_left = -1.0
 offset_top = 33.0
 offset_right = 70.0
@@ -32,6 +34,7 @@ offset_bottom = 64.0
 text = "Button2"
 
 [node name="Button3" type="Button" parent="Control"]
+layout_mode = 0
 offset_top = 65.0
 offset_right = 71.0
 offset_bottom = 96.0

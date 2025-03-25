@@ -9,49 +9,42 @@
 anchor_mode = 0
 script = ExtResource("2_fn0qi")
 on = true
-speed = 25
+speed = 15
 
 [node name="Wusels" type="Node2D" parent="."]
-position = Vector2(549, 321)
+position = Vector2(171, 103)
+scale = Vector2(0.2, 0.2)
 
 [node name="Sprite2D" type="Sprite2D" parent="Wusels"]
-position = Vector2(-461, -235)
-scale = Vector2(0.5, 0.5)
+position = Vector2(-650, -330)
 texture = ExtResource("1_s4k0s")
 
 [node name="Sprite2D2" type="Sprite2D" parent="Wusels"]
-position = Vector2(-334, 67)
-scale = Vector2(0.5, 0.5)
+position = Vector2(-130, -155)
 texture = ExtResource("1_s4k0s")
 
 [node name="Sprite2D3" type="Sprite2D" parent="Wusels"]
-position = Vector2(-93, -152)
-scale = Vector2(0.5, 0.5)
+position = Vector2(450, -350)
 texture = ExtResource("1_s4k0s")
 
 [node name="Sprite2D4" type="Sprite2D" parent="Wusels"]
-position = Vector2(149, 142)
-scale = Vector2(0.5, 0.5)
+position = Vector2(935, -145)
 texture = ExtResource("1_s4k0s")
 
 [node name="Sprite2D5" type="Sprite2D" parent="Wusels"]
-position = Vector2(411, -171)
-scale = Vector2(0.5, 0.5)
+position = Vector2(1365, -360)
 texture = ExtResource("1_s4k0s")
 
 [node name="Sprite2D6" type="Sprite2D" parent="Wusels"]
-position = Vector2(725, 154)
-scale = Vector2(0.5, 0.5)
+position = Vector2(1825, -135)
 texture = ExtResource("1_s4k0s")
 
 [node name="Sprite2D7" type="Sprite2D" parent="Wusels"]
-position = Vector2(980, -138)
-scale = Vector2(0.5, 0.5)
+position = Vector2(2335, -415)
 texture = ExtResource("1_s4k0s")
 
 [node name="Sprite2D8" type="Sprite2D" parent="Wusels"]
-position = Vector2(1294, 136)
-scale = Vector2(0.5, 0.5)
+position = Vector2(2685, -125)
 texture = ExtResource("1_s4k0s")
 
 [node name="Label" type="Label" parent="."]
@@ -62,7 +55,6 @@ offset_left = 74.0
 offset_top = -137.0
 offset_right = 975.0
 grow_vertical = 0
-theme_override_font_sizes/font_size = 42
 text = "Ohne CanvasLayer"
 vertical_alignment = 1
 
@@ -75,6 +67,5 @@ anchor_bottom = 1.0
 offset_top = -137.0
 offset_right = 335.0
 grow_vertical = 0
-theme_override_font_sizes/font_size = 42
 text = "Mit CanvasLayer"
 vertical_alignment = 2
